@@ -11,7 +11,7 @@
 
 
 _Noreturn static void arghelp(char* binary_name) {
-    printf("Argumente für den Programmaufruf\n %s\n", binary_name);
+    printf("Program Arguments:\n %s\n", binary_name);
     puts(YELLOW_BACK
         "\t -b <port>\t Bind-Port \t\t\t MANDANTORY\n"
         "\t -r <address>\t Address of the Remote-Server \t MANDANTORY\n"
@@ -79,7 +79,7 @@ static void SIG_HANDLER_manueller_abbruch(int signal) {
 
 int main(int argc, char** argv) {
     signal(SIGINT, SIG_HANDLER_manueller_abbruch);
-    puts("TITM. A program to change a Luanti-Player's password\n"
+    puts(";TITM. A program to change a Luanti-Player's password\n"
         "Only Client AND Server versions starting from 5.10 are supported! (Backporting should be trivial)\n"
         "USE AT YOUR OWN RESPONSIBILITY!"
     );
